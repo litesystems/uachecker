@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <title>UAChecker Sample Code</title>
+        <script src="../uachecker/uachecker.js"></script>
+        <script>
+            var uac = new UAChecker();
+            // iPhone iOS 6.0
+            //var uac = new UAChecker('Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A403 Safari/8536.25');
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>UAChecker Sample Code</h1>
+        </header>
+        <ul>
+            <li>General</li>
+            <ul>
+                <li><a href="#" onclick="alert(uac.UA);">UA</a></li>
+            </ul>
+            <li>Mobile</li>
+            <ul>
+                <li><a href="#" onclick="alert(uac.isiOS());">isiOS</a></li>
+                <li><a href="#" onclick="alert(uac.isAndroid());">isAndroid</a></li>
+                <li><a href="#" onclick="alert(uac.isBlackBerry());">isBlackBerry</a></li>
+                <li><a href="#" onclick="alert(uac.isWindowsPhone());">isWindowsPhone</a></li>
+                <li><a href="#" onclick="alert(uac.isWindowsMobile());">isWindowsMobile</a></li>
+                <li><a href="#" onclick="alert(uac.isSmartPhone());">isSmartPhone</a></li>
+            </ul>
+        </ul>
+    </body>
+</html>
+
